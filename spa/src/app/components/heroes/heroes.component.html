@@ -1,0 +1,14 @@
+<h1>Heroes</h1>
+<hr>
+
+<div class="card-columns">
+  <div *ngFor="let item of heroes" class="card">
+    <img [src]="item.img" class="card-img-top" [alt]="item.nombre">
+    <div  class="card-body">
+      <h5 class="card-title">{{ item.nombre }}</h5>
+      <p class="card-text">{{ item.bio }}</p>
+      <p class="card-text"><small class="text-muted">{{ item.aparicion }}</small></p>
+      <button type="button" class="btn btn-outline-primary btn-block">Ver mas...</button>
+    </div>
+  </div>
+</div>
